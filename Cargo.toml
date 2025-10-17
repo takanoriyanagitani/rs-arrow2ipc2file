@@ -1,0 +1,30 @@
+[package]
+name = "rs-arrow2ipc2file"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "forbid"
+
+[dependencies.arrow-ipc]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.arrow-array]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.arrow-schema]
+version = "56"
+default-features = false
+features = [
+	"serde",
+]
